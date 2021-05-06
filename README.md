@@ -16,5 +16,3 @@ const addOne = sum(1);
 const addTen = sum(10);
 console.log(addOne(4));
 ```
-
----
