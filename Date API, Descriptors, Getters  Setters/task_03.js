@@ -1,5 +1,5 @@
 function getMounts(date1, date2) {
-  let arrMount = [
+  let arrMonth = [
     "January",
     "February",
     "March",
@@ -14,29 +14,29 @@ function getMounts(date1, date2) {
     "December",
   ];
   let arrResult = [];
-  let arr1 = date1.split("/");
-  let arr2 = date2.split("/");
-  if (arr1[1] > 11 || arr2[1] > 11) {
+  let [year1, month1] = [date1.getFullYear(), date1.getMonth()];
+  let [year2, month2] = [date2.getFullYear(), date2.getMonth()];
+  if (month1 > 11 || month2 > 11) {
     return "wrong date";
   }
-  if (arr1[0] === arr2[0]) {
-    for (let i = Number(arr1[1]); i <= Number(arr2[1]); i++) {
-      arrResult.push(arrMount[i]);
+  if (year1 === year2) {
+    for (let i = Number(month1); i <= Number(month2); i++) {
+      arrResult.push(arrMonth[i]);
     }
   } else {
-    for (let i = Number(arr1[1]); i <= 11; i++) {
-      arrResult.push(arrMount[i]);
+    for (let i = Number(month1); i <= 11; i++) {
+      arrResult.push(arrMonth[i]);
     }
-    for (let n = Number(arr1[0]); n < Number(arr2[0] - 1); n++) {
+    for (let n = Number(year1); n < Number(year2 - 1); n++) {
       for (let j = 0; j <= 11; j++) {
-        arrResult.push(arrMount[j]);
+        arrResult.push(arrMonth[j]);
       }
     }
 
-    for (let k = 0; k <= arr2[1]; k++) {
-      arrResult.push(arrMount[k]);
+    for (let k = 0; k <= month2; k++) {
+      arrResult.push(arrMonth[k]);
     }
   }
   return arrResult;
 }
-console.log(getMounts("2020 / 00 / 01", "2021 / 11 / 01"));
+console.log(getMounts(new Date(2020, 0, 1), new Date(2021, 11, 1)));
