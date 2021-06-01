@@ -1,4 +1,7 @@
 function checkUniqueArray(arr) {
+  if (arr[1] === [1]) {
+    console.log(5);
+  }
   let resultT = "true";
   let resultF = "false";
   for (let i = 0; i < arr.length; i++) {
@@ -10,4 +13,4 @@ function checkUniqueArray(arr) {
   }
   return resultT;
 }
-console.log(checkUniqueArray([5, "Ani", 1, "", 15]));
+console.log(checkUniqueArray([5, [], "Ani", 1, "", 15]));

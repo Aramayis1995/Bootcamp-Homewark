@@ -1,4 +1,4 @@
-//to find the factorial of a given natural N.
+//to find the factorial of a given natural N
 function getSumFactorial(num) {
   if (num === 0) {
     return 1;

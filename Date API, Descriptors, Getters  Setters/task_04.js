@@ -7,4 +7,4 @@ function getDayOfYar(date) {
   let res = ms - ns;
   return res / 1000 / 60 / 60 / 24 + 1;
 }
-console.log(getDayOfYar("12/13/2020"));
+console.log(getDayOfYar("03/20/2020"));

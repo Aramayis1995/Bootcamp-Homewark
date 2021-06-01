@@ -3,7 +3,6 @@ function getForEach(arr, func) {
     func(arr[i]);
   }
 }
-
 //test
 function calculateSum(el) {
   console.log(el);

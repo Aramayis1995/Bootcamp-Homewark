@@ -39,4 +39,4 @@ function getMounts(date1, date2) {
   }
   return arrResult;
 }
-console.log(getMounts(new Date(2020, 0, 1), new Date(2021, 11, 1)));
+console.log(getMounts(new Date(2020, 11, 1), new Date(2020, 8, 1)));
