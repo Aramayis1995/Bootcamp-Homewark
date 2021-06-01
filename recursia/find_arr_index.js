@@ -1,5 +1,5 @@
 //Given an array of numbers which is almost sorted in ascending order.
-//Find the index where sorting order is violated.
+//Find the index where sorting order is violated
 let res = -Infinity;
 let i = -1;
 function findIndex(arr) {
