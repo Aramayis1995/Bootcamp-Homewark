@@ -1,4 +1,4 @@
-//Write a fib(int) function which returns n-th fibonacci number.
+//Write a fib(int) function which returns n-th fibonacci number
 function getFibonachi(num) {
   if (num === 0) {
     return 0;
