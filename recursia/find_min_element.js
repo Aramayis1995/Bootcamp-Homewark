@@ -1,4 +1,4 @@
-//Given an array of numbers. Write a recursive function to find its minimal positive element.
+//Given an array of numbers. Write a recursive function to find its minimal positive element
 //(if such element does not exist, return -1).
 let res = Infinity;
 function printMinNum(array) {
