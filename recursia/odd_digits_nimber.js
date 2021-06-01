@@ -1,4 +1,4 @@
-//Write a recursive function to determine whether all digits of the number are odd or not.
+//Write a recursive function to determine whether all digits of the number are odd or not
 function getDigits(num) {
   let numStr = num + "";
   if (numStr[numStr.length - 1] % 2 === 0) {
